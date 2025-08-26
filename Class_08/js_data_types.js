@@ -18,7 +18,7 @@
  * =============================
  * Represents integers and floating-point numbers.
  */
-let price = 199; // integer
+let yourAge = 19; // integer
 let discount = 12.5; // float
 
 // Special values:
@@ -36,7 +36,7 @@ console.log("abc" / 2); // NaN (Not a Number)
  * For really big integers beyond 2^53 - 1.
  */
 const huge = 987654321987654321987654321n;
-// console.log(huge);
+console.log(huge);
 
 // ✅ Pros: Precise for cryptography, banking, timestamps.
 // ❌ Cons: Cannot mix with normal numbers directly.
@@ -50,7 +50,7 @@ const huge = 987654321987654321987654321n;
  */
 let name = "Ali";
 let greet = `Hello, ${name}`; // Template literal with interpolation
-// console.log(greet);
+console.log(greet);
 
 // ✅ Pros: Easy to manipulate, combine, and display.
 // ❌ Cons: Can become memory-heavy with very large text.
@@ -66,9 +66,9 @@ let isLoggedIn = true;
 let isAdmin = false;
 
 if (isLoggedIn) {
-  // console.log("Show dashboard");
+  console.log("Show dashboard");
 } else {
-  // console.log("Show login page");
+  console.log("Show login page");
 }
 
 // ✅ Pros: Perfect for decision making.
@@ -81,7 +81,7 @@ if (isLoggedIn) {
  * Special type meaning nothing / deliberately empty.
  */
 let middleName = null;
-// console.log(middleName); // null
+console.log(middleName); // null
 
 // ✅ Pros: Explicitly means "no value yet".
 // ❌ Cons: typeof null === "object" (historical JS bug).
@@ -94,7 +94,7 @@ let middleName = null;
  * Variable declared but not assigned.
  */
 let age;
-// console.log(age); // undefined
+console.log(age); // undefined
 
 // ✅ Pros: Tells you variable not initialized.
 // ❌ Cons: Overlaps with null, sometimes confusing.
@@ -123,9 +123,9 @@ let id2 = Symbol("id");
 let user = {
   name: "Fatima",
   age: 22,
-  courses: ["ML", "DS"],
+  courses: ["web dev", "DS"],
 };
-// console.log(user);
+console.log(user);
 
 // ✅ Pros: Flexible, store complex data.
 // ❌ Cons: Mutability can cause bugs.
@@ -137,10 +137,10 @@ let user = {
  * =============================
  * Used to check the type of a value.
  */
-// console.log(typeof 42);           // "number"
-// console.log(typeof "hello");      // "string"
-// console.log(typeof null);         // "object" (bug)
-// console.log(typeof Symbol());     // "symbol"
+console.log(typeof 42); // "number"
+console.log(typeof "hello"); // "string"
+console.log(typeof null); // "object" (bug)
+console.log(typeof Symbol()); // "symbol"
 
 /**
  * =============================
